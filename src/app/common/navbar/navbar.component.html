@@ -1,1 +1,35 @@
-<p>navbar works!</p>
+<div class="containerd-flex header-container">
+  <div
+    class="container-fluid d-flex justify-content-between padding-nav-container"
+  >
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="../../../assets/img/logo.png" alt="" />
+    </a>
+    <nav
+      id="navbar"
+      class="navbar"
+      [ngClass]="{ 'navbar-mobile': navbarToggle }"
+    >
+      <ul>
+        <li><a class="nav-link active" href="#home">HOME</a></li>
+        <li><a class="nav-link" href="#about">ABOUT</a></li>
+        <li><a class="nav-link" href="#gallery">GALLERY</a></li>
+        <li><a class="nav-link" href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <i
+      i-bs
+      name="list"
+      class="mobile-nav-toggle mobile-nav-show"
+      [ngClass]="{ 'd-none': navbarToggle }"
+      (click)="navbarOpen(true)"
+    ></i>
+    <i
+      i-bs
+      name="x"
+      [ngClass]="{ 'd-none': !navbarToggle }"
+      class="mobile-nav-toggle mobile-nav-hide"
+      (click)="navbarOpen(false)"
+    ></i>
+  </div>
+</div>

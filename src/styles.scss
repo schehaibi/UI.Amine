@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/scss/bootstrap';
+@font-face {
+  font-family: 'Bank Gothic';
+  src: url('./assets/fonts/BankGothicLight.ttf') format('truetype');
+  /* Additional font properties (e.g., font-weight, font-style) if needed */
+}
+:root{
+    --primary-color:#AF9569;
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    background: transparent;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    background: #040404 ;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  @media (min-width: 1024px) {
+    body::before {
+      background-attachment: fixed;
+    }
+  }
+  @media (max-width: 992px) {
+    body::before {
+        left: -100px;
+        right: -190px;
+      }
+  }
