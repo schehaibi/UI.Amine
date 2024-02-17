@@ -8,13 +8,17 @@ import { NavbarComponent } from './common/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { HeroComponent } from './common/hero/hero.component';
+import { AboutComponent } from './common/about/about.component';
+import { ContactComponent } from './common/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavbarComponent,
-    HeroComponent
+    HeroComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
