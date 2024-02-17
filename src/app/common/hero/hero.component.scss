@@ -386,6 +386,8 @@
    display: flex;
    justify-content: right;
    height: 100vh;
+   scroll-snap-align: start;
+
  }
  .hero-content {
   transition: ease-in-out 0.3s;

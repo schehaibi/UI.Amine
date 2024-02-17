@@ -10,6 +10,7 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { HeroComponent } from './common/hero/hero.component';
 import { AboutComponent } from './common/about/about.component';
 import { ContactComponent } from './common/contact/contact.component';
+import { GalleryComponent } from './common/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ContactComponent } from './common/contact/contact.component';
     NavbarComponent,
     HeroComponent,
     AboutComponent,
+    GalleryComponent,
     ContactComponent
   ],
   imports: [
